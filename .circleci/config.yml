@@ -9,7 +9,7 @@ jobs:
           command: | 
             echo "You can even have multiline commands."
       - restore_cache:
-      - keys:
+        keys:
           - v1-dependencies-
       - run: mkdir ~/cache/
       - run: echo "testfile" > ~/cache/log.txt
